@@ -1,9 +1,11 @@
 <?php  
 
-include 'config.php';
+include ('config.php');
+
+$accesstoken = $_SESSION['access_token'];
 
 // reset oauth token
-$google_client->revokeToken();
+$google_client->revokeToken($accesstoken);
 
 // destroy entire session data
 session_destroy();

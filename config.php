@@ -7,10 +7,12 @@ require_once 'vendor/autoload.php';
 $google_client = new Google_Client();
 
 // set google oauth client ID
-$google_client->setClientId('56109275176-3t0s4t70ot7smt8gq4jarad162uqn0vm.apps.googleusercontent.com');
+// enter your google client id here
+$google_client->setClientId('your-client-id-here-apps.googleusercontent.com');
 
 // set google oauth client secret key
-$google_client->setClientSecret('oL3kMH2wZsYVHxz6VdiH5Anx');
+// enet your google oauth client secret key here
+$google_client->setClientSecret('client-secret-here-xz6VdiH5Anx');
 
 // set google oauth redirect uri
 $google_client->setRedirectUri('http://localhost/php-learning/index.php');
